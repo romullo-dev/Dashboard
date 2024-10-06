@@ -15,11 +15,9 @@ def generate_data():
 
 # Layout do aplicativo
 app.layout = html.Div(children=[
-    html.H1(children='Dash '),
+    html.H1(children='Dash'),
     html.Div(children='Clique no botão para gerar novos dados para o gráfico.'),
-
     dcc.Graph(id='exemplo-grafico'),
-
     html.Button('Atualizar Gráfico', id='atualizar-botao', n_clicks=0)
 ])
 
@@ -43,4 +41,4 @@ def update_graph(n_clicks):
 
 # Executa o servidor
 #if __name__ == '__main__':
-    #app.run_server(debug=True)
+#    app.run_server(debug=True)  # Não deve ser executado quando usar Gunicorn
