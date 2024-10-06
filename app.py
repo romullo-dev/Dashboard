@@ -42,5 +42,5 @@ def update_graph(n_clicks):
     return fig
 
 # Executa o servidor
-if __name__ == '__main__':
-    app.run_server(debug=True)
+#if __name__ == '__main__':
+    #app.run_server(debug=True)
